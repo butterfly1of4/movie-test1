@@ -1,7 +1,9 @@
-<h1>Movies<a href="">(+)</a>/h1></h1>
+<h1>Movies<a href="">(+)</a></h1>
   <ul>
     {% for movie in movies %}
-    <li></li>
+    <li>
+      <a href="">{{ movie.title }}</a>
+    </li>
     {% endfor %}
   </ul>
 
