@@ -1,4 +1,8 @@
-<h1>Movies<a href="">(+)</a></h1>
+{% extends 'movie/base.html' %} {% block content %}
+
+<h1>Movies<a href="">(list)</a>
+
+</h1>
   <ul>
     {% for movie in movies %}
     <li>
@@ -7,3 +11,4 @@
     {% endfor %}
   </ul>
 
+  {% endblock %}
