@@ -3,14 +3,13 @@ from django.urls import reverse
 
 # Create your models here.
 class Movie(models.Model):
-    title=models.CharField(max_length=200, unique=True)
-    #title = display_title
-    description = models.CharField(max_length=1000, default='description')
-    #description= headline
-    year=models.IntegerField(default='year')
-    #year=opening_date
-    summary=models.TextField(default='summary')
-    #summary = summary_short
+    display_title=models.CharField(max_length=200, unique=True)
+    # critics_pick=models.IntegerField(default='none')
+    byline = models.CharField(max_length=1000, default='byline', unique=True)
+    opening_date = models.CharField(default='year', max_length=50)
+    headline = models.CharField(default='headline', max_length=2000)
+    summary_short=models.TextField(default='summary')
+    url=models.CharField(default='default-url', max_length=1000)
     image=models.TextField(default='image')
     #image = src
     def __str__(self):
