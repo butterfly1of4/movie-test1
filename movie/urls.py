@@ -3,7 +3,11 @@ from . import views
 
 
 urlpatterns = [
-    path('', views.movie_list, name='movie_list'),
+    #NYT
+    path('', views.execute, name='movie_list')
+    #OTHER
+    # path('', views.get_movies, name='movie_list')
+    # path('', views.movie_list, name='movie_list'),
     # path('movies/<int:pk>', views.movie_detail, name='movie_detail')
     # path('/search',)
 ]

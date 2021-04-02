@@ -1,8 +1,10 @@
 {% extends 'movie/base.html' %} {% block content %}
 
-<h1>Movies<a href="">(list)</a>
-
-</h1>
+<h1>Movies<a href="">(list)</a></h1>
+<form method="GET">
+  <input type="text" name="name" placeholder="All"/>
+  <button>GET ALL</button>
+</form>
   <ul>
     {% for movie in movies %}
     <li>
