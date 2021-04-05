@@ -13,7 +13,7 @@ class Movie(models.Model):
     image=models.TextField(default='image')
     #image = src
     def __str__(self):
-        return self.title
+        return self.display_title
 
     #maybe don't need this but:
     # def get_absolute_url(self):
