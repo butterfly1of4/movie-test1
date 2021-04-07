@@ -3,6 +3,7 @@ from .models import Movie
 
 
 class MovieSerializer(serializers.ModelSerializer):
+    # queryset=Movie.objects.all(),
     class Meta:
         model=Movie
         fields = ['id', 'display_title', 'byline', 'opening_date', 'headline', 'summary_short', 'url', 'image']
@@ -10,7 +11,6 @@ class MovieSerializer(serializers.ModelSerializer):
 # class MovieSerializer(serializers.HyperlinkedModelSerializer):
 
 #     movies = serializers.HyperlinkedRelatedField(
-#         # queryset=Movie.objects.all(),
 #         # )
 #         view_name='full_list',
 #         many=True,

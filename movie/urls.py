@@ -4,8 +4,8 @@ from rest_framework.routers import DefaultRouter
 
 
 urlpatterns = [
-    path('', views.MovieList.as_view(), name='display_title')
-    # path('', views.execute, name='display_title'),
+    # path('movies/', views.full_list, name='display_title')
+    path('', views.MovieList.as_view(), name='display_title'),
     #NYT
     # path('', views.execute, name='movie_list')
     #OTHER
